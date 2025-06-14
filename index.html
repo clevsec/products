@@ -6,6 +6,8 @@
     <title>Security Camera Repair Services - Cleveland Security Cameras</title>
     <!-- Tailwind CSS CDN for basic styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN for visual elements (moved to head for faster loading of icons) -->
+    <script src="https://unpkg.com/lucide-icons@latest"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -73,6 +75,71 @@
             color: #e2e8f0;
             margin-bottom: 10px;
         }
+        /* Form specific styles */
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #e2e8f0;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #4a5568;
+            border: 1px solid #63b3ed;
+            border-radius: 0.5rem;
+            color: #e2e8f0;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus,
+        .form-group textarea:focus {
+            border-color: #4299e1;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+            outline: none;
+        }
+        /* Message box styles */
+        #messageBox {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #2d3748;
+            color: #e2e8f0;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            text-align: center;
+            border: 2px solid #4299e1;
+            display: none; /* Hidden by default */
+            max-width: 90%;
+            animation: fadeIn 0.3s ease-out;
+        }
+        #messageBox button {
+            background-color: #4299e1;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.2s ease;
+        }
+        #messageBox button:hover {
+            background-color: #3182ce;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translate(-50%, -60%); }
+            to { opacity: 1; transform: translate(-50%, -50%); }
+        }
     </style>
 </head>
 <body class="p-4">
@@ -129,34 +196,111 @@
 
         <section class="mt-10 text-center">
             <h3 class="text-2xl font-semibold mb-6 text-gray-100">Ready to Schedule a Service or Ask a Question?</h3>
-            <p class="text-lg mb-6 text-gray-300">
-                You can reach us directly by email or phone:
-            </p>
-            <p class="text-lg mb-6">
-                <a href="mailto:contact@clevelandsecuritycameras.com,cmdadvantage@gmail.com,vision8000@outlook.com?subject=Security%20Camera%20Service%20Inquiry"
-                   class="nav-link bg-indigo-600 hover:bg-indigo-500 shadow-lg">
-                    Contact Us
-                    <i data-lucide="mail" class="inline-block ml-2 w-5 h-5"></i>
-                </a>
-            </p>
+            
             <p class="text-lg mb-4 text-gray-300">
-                Or give us a call:
+                For immediate assistance, please call us directly:
             </p>
-            <p class="text-4xl font-extrabold text-teal-400">
+            <p class="text-4xl font-extrabold text-teal-400 mb-8">
                 <a href="tel:+12163338245" class="hover:underline">
                     216-333-8245
                     <i data-lucide="phone" class="inline-block ml-3 w-7 h-7"></i>
                 </a>
             </p>
+
+            <p class="text-lg mb-6 text-gray-300">
+                Or, fill out the form below and we'll get back to you:
+            </p>
+
+            <div class="bg-gray-700 p-8 rounded-lg shadow-xl mb-8">
+                <!-- Formspree Integration -->
+                <!-- IMPORTANT: Replace "YOUR_FORMSPREE_ENDPOINT" with your actual Formspree form URL. -->
+                <!-- Set up this Formspree form to send submissions ONLY to contact@clevelandsecuritycameras.com in your Formspree.io account settings. -->
+                <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="text-left">
+                    <div class="form-group">
+                        <label for="fullName">Your Name:</label>
+                        <input type="text" id="fullName" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailAddress">Your Email:</label>
+                        <input type="email" id="emailAddress" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your security camera needs..."></textarea>
+                    </div>
+                    <div class="text-center mt-6">
+                        <button type="submit"
+                           class="nav-link bg-indigo-600 hover:bg-indigo-500 shadow-lg cursor-pointer">
+                            Submit
+                            <i data-lucide="mail" class="inline-block ml-2 w-5 h-5"></i>
+                        </button>
+                    </div>
+                </form>
+                <p class="text-sm text-gray-400 mt-4">
+                    *Note: This form uses Formspree.io to send messages directly. Please configure your Formspree account for the unique URL above to send submissions only to **contact@clevelandsecuritycameras.com**.
+                </p>
+            </div>
         </section>
     </div>
+
+    <!-- Message Box (replaces alert for better UX) -->
+    <div id="messageBox">
+        <p id="messageText"></p>
+        <button id="closeMessageBox">OK</button>
+    </div>
+
     <!-- Lucide Icons CDN for visual elements -->
     <script src="https://unpkg.com/lucide-icons@latest"></script>
-    <!-- Initialize Lucide Icons directly after the CDN script -->
+    <!-- Initialize Lucide Icons after the content is loaded and Lucide is available -->
     <script>
-        // No DOMContentLoaded needed here, as the script is placed at the end of the body
-        // and the Lucide library CDN script is directly before it.
-        lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+
+            // Custom Message Box functions
+            const messageBox = document.getElementById('messageBox');
+            const messageText = document.getElementById('messageText');
+            const closeMessageBox = document.getElementById('closeMessageBox');
+
+            function showMessage(message) {
+                messageText.textContent = message;
+                messageBox.style.display = 'block';
+            }
+
+            closeMessageBox.addEventListener('click', function() {
+                messageBox.style.display = 'none';
+            });
+
+            // Handle Formspree submission feedback
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', async function(event) {
+                event.preventDefault(); // Prevent default form submission
+
+                const formData = new FormData(form);
+                try {
+                    const response = await fetch(form.action, {
+                        method: form.method,
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        showMessage('Thank you for your message! We will get back to you shortly.');
+                        form.reset(); // Clear the form
+                    } else {
+                        const data = await response.json();
+                        if (Object.hasOwnProperty.call(data, 'errors')) {
+                            showMessage(data["errors"].map(error => error["message"]).join(", "));
+                        } else {
+                            showMessage('Oops! There was a problem submitting your form.');
+                        }
+                    }
+                } catch (error) {
+                    showMessage('Oops! There was a network error. Please try again later.');
+                }
+            });
+        });
     </script>
 </body>
 </html>
