@@ -3,106 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Camera Repair Services - Cleveland Security Cameras</title>
-    <!-- Tailwind CSS CDN for basic styling -->
+    <title>Premier Security Camera Repair, Maintenance & System Solutions</title>
+    <meta name="description" content="Specialized repair, meticulous maintenance, and comprehensive troubleshooting for security camera systems, CCTV, DVRs, and NVRs. We restore optimal performance and deliver unwavering surveillance reliability.">
+    <!-- Tailwind CSS CDN for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons CDN for visual elements -->
     <script src="https://unpkg.com/lucide-icons@latest"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #1a202c; /* Dark background for security theme */
-            color: #e2e8f0; /* Light text for contrast */
-            line-height: 1.6;
+            background-color: #0c0f16; /* Deeper, more sophisticated dark background */
+            color: #e0e6eb; /* Soft white for primary text */
+            line-height: 1.8; /* Enhanced readability */
+            font-size: 16px;
         }
         .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 24px; /* Increased padding */
-            background-color: #2d3748; /* Slightly lighter dark background for content area */
-            border-radius: 12px;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+            max-width: 900px; /* Wider container for spacious layout */
+            margin: 60px auto; /* Increased vertical spacing */
+            padding: 40px; /* Generous padding */
+            background-color: #1a1f2c; /* Rich, dark content background */
+            border-radius: 20px; /* Smoother rounded corners */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); /* Deeper, more diffused shadow */
+            border: 1px solid #2e3541; /* Subtle, elegant border */
+        }
+        .header-icon {
+            color: #63b3ed; /* Professional blue for main icon */
+            width: 64px; /* Larger icon */
+            height: 64px;
+            stroke-width: 2.8; /* Thicker stroke for presence */
+            filter: drop-shadow(0 0 8px rgba(99, 179, 237, 0.4)); /* Soft glow */
+        }
+        .section-heading {
+            color: #63b3ed; /* Consistent blue for section titles */
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 800; /* Extra bold */
+            margin-bottom: 35px; /* Ample spacing */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         }
         .nav-link {
-            display: inline-block;
-            padding: 10px 18px; /* Larger padding */
-            margin: 0 8px; /* Increased margin */
-            background-color: #4299e1; /* Blue for navigation */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px; /* Larger, more prominent buttons */
+            margin: 0 12px;
+            background-color: #4299e1; /* Primary blue button color */
             color: white;
             text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            border-radius: 12px; /* More rounded */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            font-weight: 700; /* Bold */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase; /* Subtle professional touch */
+            letter-spacing: 0.05em;
         }
         .nav-link:hover {
-            background-color: #3182ce;
-            transform: translateY(-2px); /* Subtle hover effect */
+            background-color: #3182ce; /* Darker blue on hover */
+            transform: translateY(-4px); /* More pronounced lift */
+            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.4);
         }
         .info-box {
-            background-color: #4a5568; /* Darker background for info box */
-            border-left: 5px solid #63b3ed; /* Brighter blue border */
-            padding: 20px; /* Increased padding */
-            border-radius: 8px;
-            margin-top: 25px; /* Increased margin top */
-            color: #e2e8f0; /* Light text inside info box */
+            background-color: #2a303c; /* Slightly lighter inner background */
+            border-left: 8px solid #38a169; /* Stronger green highlight */
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            color: #e0e6eb;
+            box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
         }
         .price-highlight {
-            font-size: 2.2rem; /* Larger font size */
-            font-weight: bold;
-            color: #fc8181; /* Soft red for emphasis */
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Subtle shadow */
+            font-size: 3rem; /* Very large price for emphasis */
+            font-weight: 900; /* Ultra bold */
+            color: #dc2626; /* Darker, more prominent red for financial emphasis */
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.6); /* Strong shadow */
+            letter-spacing: 0.02em;
         }
         .service-card {
-            background-color: #3b465b; /* Slightly lighter dark for cards */
-            border-radius: 10px;
-            padding: 20px;
+            background-color: #2a303c; /* Card background */
+            border-radius: 15px;
+            padding: 30px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            border: 1px solid #4a5568; /* Subtle border for cards */
         }
         .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+            transform: translateY(-10px); /* More significant lift */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            background-color: #3a4252; /* Slightly lighten on hover */
         }
         .service-card svg {
-            color: #63b3ed; /* Icon color */
-            margin-bottom: 15px;
-            width: 48px; /* Larger icon size */
-            height: 48px;
+            color: #63b3ed; /* Consistent icon color */
+            margin-bottom: 25px;
+            width: 72px; /* Even larger icon size */
+            height: 72px;
+            stroke-width: 2.2;
         }
         .service-card h4 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #e2e8f0;
-            margin-bottom: 10px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #a7d0f9; /* Lighter blue for card titles */
+            margin-bottom: 15px;
+            letter-spacing: 0.02em;
         }
         /* Form specific styles */
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem; /* Ample spacing between form fields */
             text-align: left;
         }
         .form-group label {
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem; /* More spacing for labels */
             font-weight: bold;
-            color: #e2e8f0;
+            color: #c9d1d9;
+            font-size: 1.15rem; /* Slightly larger labels */
         }
         .form-group input[type="text"],
         .form-group input[type="email"],
+        .form-group input[type="tel"],
         .form-group textarea {
             width: 100%;
-            padding: 0.75rem;
-            background-color: #4a5568;
-            border: 1px solid #63b3ed;
-            border-radius: 0.5rem;
-            color: #e2e8f0;
-            box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            padding: 1rem; /* Generous padding for inputs */
+            background-color: #1f2531; /* Darker input background */
+            border: 1px solid #58a6ff; /* Professional blue border */
+            border-radius: 0.8rem; /* More rounded inputs */
+            color: #f0f2f5; /* Very light text in inputs */
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            font-size: 1.05rem;
         }
         .form-group input[type="text"]:focus,
         .form-group input[type="email"]:focus,
+        .form-group input[type="tel"]:focus,
         .form-group textarea:focus {
-            border-color: #4299e1;
-            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+            border-color: #2188ff;
+            box-shadow: 0 0 0 5px rgba(33, 136, 255, 0.6); /* Prominent focus glow */
             outline: none;
         }
         /* Message box styles */
@@ -111,27 +145,29 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: #2d3748;
-            color: #e2e8f0;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            background-color: #1a1f2c;
+            color: #e0e6eb;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
             z-index: 1000;
             text-align: center;
-            border: 2px solid #4299e1;
+            border: 2px solid #63b3ed;
             display: none; /* Hidden by default */
             max-width: 90%;
             animation: fadeIn 0.3s ease-out;
+            font-size: 1.1rem;
         }
         #messageBox button {
             background-color: #4299e1;
             color: white;
-            padding: 8px 15px;
-            border-radius: 5px;
+            padding: 12px 25px;
+            border-radius: 8px;
             border: none;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 25px;
             transition: background-color 0.2s ease;
+            font-weight: bold;
         }
         #messageBox button:hover {
             background-color: #3182ce;
@@ -142,98 +178,99 @@
         }
     </style>
 </head>
-<body class="p-4">
+<body class="p-6">
     <div class="container">
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-center mb-8 text-blue-400">
-            <i data-lucide="shield-check" class="inline-block mr-3 w-10 h-10"></i> Security System Repair & Service
+        <h1 class="text-5xl sm:text-6xl font-extrabold text-center mb-12 text-blue-400">
+            <i data-lucide="shield-check" class="inline-block mr-4 header-icon"></i> Specialized Security Camera Repair, Maintenance & System Solutions
         </h1>
-        <p class="text-lg mb-10 text-center text-gray-300">
-            We specialize in repairing and servicing existing security camera systems to ensure your peace of mind.
-            Trust Cleveland Security Cameras for reliable and efficient solutions.
+        <p class="text-xl mb-14 text-center text-gray-400 max-w-2xl mx-auto">
+            Ensure your **security and surveillance infrastructure** operates flawlessly. We provide expert repair, meticulous maintenance, and comprehensive troubleshooting for all existing security camera systems. Trust our specialized service for **unparalleled performance** and **reliable protection** of your assets.
         </p>
 
-        <section class="mb-8">
-            <h3 class="text-xl font-semibold mb-6 text-gray-100 text-center">What We Repair:</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <section class="mb-14">
+            <h3 class="section-heading text-center">Our Core Expertise: Comprehensive System Service & Repair</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="service-card">
-                    <i data-lucide="video"></i>
-                    <h4>Security Cameras</h4>
-                    <p class="text-gray-300 text-sm">
-                        All types, including IP, Analog, Dome, Bullet, PTZ. Expert diagnosis and repair.
+                    <i data-lucide="cctv"></i> <!-- More specific CCTV icon -->
+                    <h4>Security Camera Repair</h4>
+                    <p class="text-gray-300 text-base mt-2">
+                        Specialized diagnosis and repair for all types of **security cameras**, including advanced IP, traditional Analog, Dome, Bullet, and PTZ models. We resolve issues such as blurry images, night vision failures, and connectivity problems to restore optimal camera performance and clarity.
                     </p>
                 </div>
                 <div class="service-card">
-                    <i data-lucide="hard-drive"></i>
-                    <h4>Security DVRs</h4>
-                    <p class="text-gray-300 text-sm">
-                        Troubleshooting and repair for all Digital Video Recorder recording and playback issues.
+                    <i data-lucide="monitor-dot"></i> <!-- Icon for DVR/NVR monitoring -->
+                    <h4>DVR System Troubleshooting</h4>
+                    <p class="text-gray-300 text-base mt-2">
+                        Comprehensive troubleshooting and repair services for **Digital Video Recorders (DVRs)**. Our technicians expertly address common problems like recording failures, inaccessible playback, and system errors, ensuring your critical surveillance footage is always captured and readily available.
                     </p>
                 </div>
                 <div class="service-card">
-                    <i data-lucide="network"></i>
-                    <h4>Security NVRs</h4>
-                    <p class="text-gray-300 text-sm">
-                        Specialized service for Network Video Recorders, ensuring seamless network performance.
+                    <i data-lucide="server"></i> <!-- Icon for NVR/server related issues -->
+                    <h4>NVR & Network System Service</h4>
+                    <p class="text-gray-300 text-base mt-2">
+                        Advanced maintenance and repair for **Network Video Recorders (NVRs)** and their integrated IP-based surveillance networks. We meticulously resolve network connectivity issues, unexpected video loss, and configuration challenges to guarantee seamless remote monitoring and robust system integrity.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="mb-8">
-            <h3 class="text-xl font-semibold mb-4 text-gray-100">Service Call Details:</h3>
+        <section class="mb-14">
+            <h3 class="section-heading">Service Engagement Details:</h3>
             <div class="info-box">
-                <p>
-                    Our standard service call fee is <span class="price-highlight">$375</span>. This fee covers most common diagnostic and repair problems encountered on-site.
+                <p class="text-lg">
+                    Our standard **on-site service consultation fee** is <span class="price-highlight">$375</span>. This fee covers the comprehensive diagnostic process and addresses most common immediate repair issues identified by our certified technicians during their visit.
                 </p>
-                <p class="mt-4 text-base text-gray-300">
-                    Please note that any necessary **hardware (e.g., new cameras, cables, parts) or additional installation labor beyond the initial service call will be quoted separately**. We believe in transparent pricing and will always discuss any extra costs upfront.
+                <p class="mt-5 text-base text-gray-300">
+                    Please be advised that any necessary **replacement components** (e.g., new cameras, specialized cabling, DVR/NVR parts, power supplies) or **additional installation labor** extending beyond the initial service consultation will be quoted transparently and discussed with you in advance. We prioritize clarity in all our pricing and services.
                 </p>
-                <p class="mt-4 text-sm text-gray-400">
-                    Our goal is to get your system back up and running efficiently and reliably.
+                <p class="mt-5 text-sm text-gray-400">
+                    Our commitment is to ensure your existing surveillance infrastructure functions efficiently, reliably, and securely, providing you with uninterrupted peace of mind.
                 </p>
             </div>
         </section>
 
-        <section class="mt-10 text-center">
-            <h3 class="text-2xl font-semibold mb-6 text-gray-100">Ready to Schedule a Service or Ask a Question?</h3>
+        <section class="mt-16 text-center">
+            <h3 class="section-heading text-center">Initiate Service or Request a Consultation:</h3>
             
-            <p class="text-lg mb-4 text-gray-300">
-                For immediate assistance, please call us directly:
+            <p class="text-lg mb-8 text-gray-300">
+                For immediate assistance or urgent system repair, please contact our service dispatch directly:
             </p>
-            <p class="text-4xl font-extrabold text-teal-400 mb-8">
-                <a href="tel:+12163338245" class="hover:underline">
-                    216-333-8245
-                    <i data-lucide="phone" class="inline-block ml-3 w-7 h-7"></i>
+            <p class="text-5xl font-extrabold text-teal-400 mb-12">
+                <a href="tel:+12163338245" class="hover:underline flex items-center justify-center group">
+                    <i data-lucide="phone-call" class="inline-block mr-5 w-12 h-12 transition-transform duration-300 group-hover:scale-110"></i> 216-333-8245
                 </a>
             </p>
 
-            <p class="text-lg mb-6 text-gray-300">
-                Or, fill out the form below and we'll get back to you:
+            <p class="text-lg mb-10 text-gray-300">
+                Alternatively, complete the inquiry form below to schedule a detailed consultation or request service. Our team will respond promptly to understand your specific needs.
             </p>
 
-            <div class="bg-gray-700 p-8 rounded-lg shadow-xl mb-8">
+            <div class="bg-gray-900 p-12 rounded-2xl shadow-2xl mb-8 border border-gray-700">
                 <form id="contactForm" action="https://formspree.io/f/mnnvvnnb" method="POST" class="text-left">
                     <div class="form-group">
-                        <label for="fullName">Your Name:</label>
-                        <input type="text" id="fullName" name="name" required placeholder="John Doe">
+                        <label for="fullName">Your Full Name:</label>
+                        <input type="text" id="fullName" name="name" required placeholder="Johnathan Doe">
                     </div>
                     <div class="form-group">
-                        <label for="emailAddress">Your Email:</label>
+                        <label for="emailAddress">Your Professional Email Address:</label>
                         <input type="email" id="emailAddress" name="email" required placeholder="your.email@example.com">
                     </div>
                     <div class="form-group">
-                        <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your security camera needs..."></textarea>
+                        <label for="phoneNumber">Your Direct Phone Number:</label>
+                        <input type="tel" id="phoneNumber" name="phone" placeholder="(123) 456-7890">
                     </div>
-                    <div class="text-center mt-6">
+                    <div class="form-group">
+                        <label for="message">Detailed Service Request or Inquiry:</label>
+                        <textarea id="message" name="message" rows="7" required placeholder="Please describe your security camera issues, system repair requirements, or desired maintenance schedule..."></textarea>
+                    </div>
+                    <div class="text-center mt-12">
                         <button type="submit"
-                           class="nav-link bg-indigo-600 hover:bg-indigo-500 shadow-lg cursor-pointer">
-                            Submit
-                            <i data-lucide="mail" class="inline-block ml-2 w-5 h-5"></i>
+                           class="nav-link bg-blue-600 hover:bg-blue-700 shadow-xl cursor-pointer">
+                            Submit Service Request
+                            <i data-lucide="send" class="inline-block ml-4 w-6 h-6"></i>
                         </button>
                     </div>
                 </form>
-                
             </div>
         </section>
     </div>
@@ -244,8 +281,6 @@
         <button id="closeMessageBox">OK</button>
     </div>
 
-    <!-- Lucide Icons CDN for visual elements -->
-    <script src="https://unpkg.com/lucide-icons@latest"></script>
     <!-- Initialize Lucide Icons after the content is loaded and Lucide is available -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -272,7 +307,7 @@
 
                 const formData = new FormData(form);
                 // Add a hidden field for _subject to set the email's subject line
-                formData.append('_subject', 'Submission'); 
+                formData.append('_subject', 'Service Request Submitted - Surveillance System'); 
 
                 try {
                     const response = await fetch(form.action, {
@@ -284,18 +319,18 @@
                     });
 
                     if (response.ok) {
-                        showMessage('Thank you for your message! We will get back to you shortly.');
+                        showMessage('Thank you for your service request! We have received your message and will contact you promptly.');
                         form.reset(); // Clear the form
                     } else {
                         const data = await response.json();
                         if (Object.hasOwnProperty.call(data, 'errors')) {
-                            showMessage(data["errors"].map(error => error["message"]).join(", "));
+                            showMessage('Error: ' + data["errors"].map(error => error["message"]).join(", "));
                         } else {
-                            showMessage('Oops! There was a problem submitting your form.');
+                            showMessage('An unexpected error occurred during submission. Please try again or call us.');
                         }
                     }
                 } catch (error) {
-                    showMessage('Oops! There was a network error. Please try again later.');
+                    showMessage('Network error: Could not connect to the server. Please check your internet connection and try again.');
                 }
             });
         });
