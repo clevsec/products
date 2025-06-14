@@ -3,416 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier Security Camera Repair, Maintenance & System Solutions</title>
-    <meta name="description" content="Specialized repair, meticulous maintenance, and comprehensive troubleshooting for security camera systems, CCTV, DVRs, and NVRs. We restore optimal performance and deliver unwavering surveillance reliability.">
-    <!-- Tailwind CSS CDN for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons CDN for visual elements -->
-    <script src="https://unpkg.com/lucide-icons@latest"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0c0f16; /* Deeper, more sophisticated dark background */
-            color: #e0e6eb; /* Soft white for primary text */
-            line-height: 1.8; /* Enhanced readability */
-            font-size: 16px;
-        }
-        .container {
-            max-width: 900px; /* Wider container for spacious layout */
-            margin: 40px auto; /* Adjusted for better mobile top/bottom spacing */
-            padding: 24px; /* Adjusted for better mobile padding */
-            background-color: #1a1f2c; /* Rich, dark content background */
-            border-radius: 20px; /* Smoother rounded corners */
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); /* Deeper, more diffused shadow */
-            border: 1px solid #2e3541; /* Subtle, elegant border */
-        }
-        @media (min-width: 768px) { /* Adjust padding for medium screens and up */
-            .container {
-                padding: 40px;
-                margin: 60px auto; /* Restore larger margins for desktop */
+    <meta name="description" content="Expert remote support, repair, and maintenance for Hikvision, Dahua, and Avigilon security cameras, DVRs, and NVRs in the USA. Get premium solutions today!">
+    <meta name="keywords" content="security camera repair USA, Hikvision support, Dahua troubleshooting, Avigilon maintenance, CCTV repair, DVR NVR service">
+    <meta name="author" content="Your Business Name">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE">
+    <title>Premier Security Camera Support & Repair | USA Solutions</title>
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Premier Security Camera Support",
+            "description": "Expert remote support, repair, and maintenance for security cameras, DVRs, and NVRs across major brands.",
+            "url": "https://yourusername.github.io/security-support-page",
+            "telephone": "+12163338245",
+            "areaServed": "United States",
+            "sameAs": [
+                "https://yourusername.github.io/security-ad-page",
+                "https://yourwixsite.com"
+            ],
+            "serviceType": "Security System Repair and Maintenance",
+            "provider": {
+                "@type": "Organization",
+                "name": "Your Business Name",
+                "email": "support@yourbusiness.com",
+                "logo": "https://yourusername.github.io/security-support-page/logo.png"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "150"
             }
         }
-        .header-icon {
-            color: #63b3ed; /* Professional blue for main icon */
-            width: 56px; /* Slightly smaller icon for mobile, scales up */
-            height: 56px;
-            stroke-width: 2.8; /* Thicker stroke for presence */
-            filter: drop-shadow(0 0 8px rgba(99, 179, 237, 0.4)); /* Soft glow */
-        }
-        @media (min-width: 768px) {
-            .header-icon {
-                width: 64px;
-                height: 64px;
-            }
-        }
-        .section-heading {
-            color: #63b3ed; /* Consistent blue for section titles */
-            font-size: 1.875rem; /* text-3xl for mobile */
-            font-weight: 800; /* Extra bold */
-            margin-bottom: 25px; /* Ample spacing */
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-        }
-        @media (min-width: 768px) {
-            .section-heading {
-                font-size: 2.25rem; /* text-4xl for desktop */
-                margin-bottom: 35px;
-            }
-        }
-        .nav-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 12px 24px; /* Adjusted padding for buttons */
-            margin: 0 8px; /* Adjusted margin */
-            background-color: #4299e1; /* Primary blue button color */
-            color: white;
-            text-decoration: none;
-            border-radius: 12px; /* More rounded */
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-            font-weight: 700; /* Bold */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-            text-transform: uppercase; /* Subtle professional touch */
-            letter-spacing: 0.05em;
-        }
-        @media (min-width: 768px) {
-            .nav-link {
-                padding: 14px 28px;
-                margin: 0 12px;
-            }
-        }
-        .nav-link:hover {
-            background-color: #3182ce; /* Darker blue on hover */
-            transform: translateY(-4px); /* More pronounced lift */
-            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.4);
-        }
-        .info-box {
-            background-color: #2a303c; /* Slightly lighter inner background */
-            border-left: 8px solid #38a169; /* Stronger green highlight */
-            padding: 25px; /* Adjusted padding */
-            border-radius: 15px;
-            margin-top: 30px;
-            color: #e0e6eb;
-            box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
-        }
-        @media (min-width: 768px) {
-            .info-box {
-                padding: 30px;
-                margin-top: 40px;
-            }
-        }
-        .price-highlight {
-            font-size: 2.5rem; /* Adjusted for mobile readability */
-            font-weight: 900; /* Ultra bold */
-            color: #dc2626; /* Darker, more prominent red for financial emphasis */
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.6); /* Strong shadow */
-            letter-spacing: 0.02em;
-        }
-        @media (min-width: 768px) {
-            .price-highlight {
-                font-size: 3rem; /* Restore larger size for desktop */
-            }
-        }
-        .service-card {
-            background-color: #2a303c; /* Card background */
-            border-radius: 15px;
-            padding: 25px; /* Adjusted padding */
-            text-align: center;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-            border: 1px solid #4a5568; /* Subtle border for cards */
-        }
-        @media (min-width: 768px) {
-            .service-card {
-                padding: 30px;
-            }
-        }
-        .service-card:hover {
-            transform: translateY(-10px); /* More significant lift */
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-            background-color: #3a4252; /* Slightly lighten on hover */
-        }
-        .service-card svg {
-            color: #63b3ed; /* Consistent icon color */
-            margin-bottom: 20px; /* Adjusted margin */
-            width: 64px; /* Adjusted icon size */
-            height: 64px;
-            stroke-width: 2.2;
-        }
-        @media (min-width: 768px) {
-            .service-card svg {
-                margin-bottom: 25px;
-                width: 72px;
-                height: 72px;
-            }
-        }
-        .service-card h4 {
-            font-size: 1.6rem; /* Adjusted font size */
-            font-weight: 700;
-            color: #a7d0f9; /* Lighter blue for card titles */
-            margin-bottom: 12px;
-            letter-spacing: 0.02em;
-        }
-        /* Form specific styles */
-        .form-group {
-            margin-bottom: 1.5rem; /* Adjusted spacing */
-            text-align: left;
-        }
-        @media (min-width: 768px) {
-            .form-group {
-                margin-bottom: 2rem;
-            }
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 0.6rem; /* Adjusted spacing */
-            font-weight: bold;
-            color: #c9d1d9;
-            font-size: 1.05rem; /* Adjusted label size */
-        }
-        @media (min-width: 768px) {
-            .form-group label {
-                margin-bottom: 0.8rem;
-                font-size: 1.15rem;
-            }
-        }
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="tel"],
-        .form-group textarea {
-            width: 100%;
-            padding: 0.8rem; /* Adjusted padding */
-            background-color: #1f2531; /* Darker input background */
-            border: 1px solid #58a6ff; /* Professional blue border */
-            border-radius: 0.8rem; /* More rounded inputs */
-            color: #f0f2f5; /* Very light text in inputs */
-            box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            font-size: 1rem; /* Adjusted font size */
-        }
-        @media (min-width: 768px) {
-            .form-group input[type="text"],
-            .form-group input[type="email"],
-            .form-group input[type="tel"],
-            .form-group textarea {
-                padding: 1rem;
-                font-size: 1.05rem;
-            }
-        }
-        .form-group input[type="text"]:focus,
-        .form-group input[type="email"]:focus,
-        .form-group input[type="tel"]:focus,
-        .form-group textarea:focus {
-            border-color: #2188ff;
-            box-shadow: 0 0 0 5px rgba(33, 136, 255, 0.6); /* Prominent focus glow */
-            outline: none;
-        }
-        /* Message box styles */
-        #messageBox {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #1a1f2c;
-            color: #e0e6eb;
-            padding: 25px; /* Adjusted padding */
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
-            z-index: 1000;
-            text-align: center;
-            border: 2px solid #63b3ed;
-            display: none; /* Hidden by default */
-            max-width: 90%;
-            animation: fadeIn 0.3s ease-out;
-            font-size: 1rem; /* Adjusted font size */
-        }
-        @media (min-width: 768px) {
-            #messageBox {
-                padding: 35px;
-                font-size: 1.1rem;
-            }
-        }
-        #messageBox button {
-            background-color: #4299e1;
-            color: white;
-            padding: 10px 20px; /* Adjusted padding */
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-            margin-top: 20px; /* Adjusted margin */
-            transition: background-color 0.2s ease;
-            font-weight: bold;
-        }
-        @media (min-width: 768px) {
-            #messageBox button {
-                padding: 12px 25px;
-                margin-top: 25px;
-            }
-        }
-        #messageBox button:hover {
-            background-color: #3182ce;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translate(-50%, -60%); }
-            to { opacity: 1; transform: translate(-50%, -50%); }
-        }
-    </style>
-</head>
-<body class="p-4 sm:p-6">
-    <div class="container">
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-400 mb-10 sm:mb-12 flex items-center justify-center text-center gap-3 sm:gap-4 leading-tight">
-            <i data-lucide="shield-check" class="header-icon"></i> Specialized Security Camera Repair, Maintenance & System Solutions
-        </h1>
-        <p class="text-lg sm:text-xl mb-12 sm:mb-14 text-center text-gray-400 max-w-xl sm:max-w-2xl mx-auto">
-            Ensure your <strong>security and surveillance infrastructure</strong> operates flawlessly. We provide expert repair, meticulous maintenance, and comprehensive troubleshooting for all existing security camera systems. Trust our specialized service for <strong>unparalleled performance</strong> and <strong>reliable protection</strong> of your assets.
-        </p>
-
-        <section class="mb-12 sm:mb-14">
-            <h3 class="section-heading text-center">Our Core Expertise: Comprehensive System Service & Repair</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-                <div class="service-card">
-                    <i data-lucide="cctv"></i> <!-- More specific CCTV icon -->
-                    <h4>Security Camera Repair</h4>
-                    <p class="text-gray-300 text-base mt-2">
-                        Specialized diagnosis and repair for all types of <strong>security cameras</strong>, including advanced IP, traditional Analog, Dome, Bullet, and PTZ models. We resolve issues such as blurry images, night vision failures, and connectivity problems to restore optimal camera performance and clarity.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <i data-lucide="monitor-dot"></i> <!-- Icon for DVR/NVR monitoring -->
-                    <h4>DVR System Troubleshooting</h4>
-                    <p class="text-gray-300 text-base mt-2">
-                        Comprehensive troubleshooting and repair services for <strong>Digital Video Recorders (DVRs)</strong>. Our technicians expertly address common problems like recording failures, inaccessible playback, and system errors, ensuring your critical surveillance footage is always captured and readily available.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <i data-lucide="server"></i> <!-- Icon for NVR/server related issues -->
-                    <h4>NVR & Network System Service</h4>
-                    <p class="text-gray-300 text-base mt-2">
-                        Advanced maintenance and repair for <strong>Network Video Recorders (NVRs)</strong> and their integrated IP-based surveillance networks. We meticulously resolve network connectivity issues, unexpected video loss, and configuration challenges to guarantee seamless remote monitoring and robust system integrity.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-12 sm:mb-14">
-            <h3 class="section-heading">Service Engagement Details:</h3>
-            <div class="info-box">
-                <p class="text-base sm:text-lg">
-                    Our standard <strong>on-site service consultation fee</strong> is <span class="price-highlight">$375</span>. This fee covers the comprehensive diagnostic process and addresses most common immediate repair issues identified by our certified technicians during their visit.
-                </p>
-                <p class="mt-4 sm:mt-5 text-sm sm:text-base text-gray-300">
-                    Please be advised that any necessary <strong>replacement components</strong> (e.g., new cameras, specialized cabling, DVR/NVR parts, power supplies) or <strong>additional installation labor</strong> extending beyond the initial service consultation will be quoted transparently and discussed with you in advance. We prioritize clarity in all our pricing and services.
-                </p>
-                <p class="mt-4 sm:mt-5 text-xs sm:text-sm text-gray-400">
-                    Our commitment is to ensure your existing surveillance infrastructure functions efficiently, reliably, and securely, providing you with uninterrupted peace of mind.
-                </p>
-            </div>
-        </section>
-
-        <section class="mt-12 sm:mt-16 text-center">
-            <h3 class="section-heading text-center">Initiate Service or Request a Consultation:</h3>
-            
-            <p class="text-base sm:text-lg mb-6 sm:mb-8 text-gray-300">
-                For immediate assistance or urgent system repair, please contact our service dispatch directly:
-            </p>
-            <p class="text-4xl sm:text-5xl font-extrabold text-teal-400 mb-10 sm:mb-12">
-                <a href="tel:+12163338245" class="hover:underline flex items-center justify-center group">
-                    <i data-lucide="phone-call" class="inline-block mr-4 sm:mr-5 w-10 h-10 sm:w-12 sm:h-12 transition-transform duration-300 group-hover:scale-110"></i> 216-333-8245
-                </a>
-            </p>
-
-            <p class="text-base sm:text-lg mb-8 sm:mb-10 text-gray-300">
-                Alternatively, complete the inquiry form below to schedule a detailed consultation or request service. Our team will respond promptly to understand your specific needs.
-            </p>
-
-            <div class="bg-gray-900 p-8 sm:p-12 rounded-2xl shadow-2xl mb-8 border border-gray-700">
-                <form id="contactForm" action="https://formspree.io/f/mnnvvnnb" method="POST" class="text-left">
-                    <div class="form-group">
-                        <label for="fullName">Your Full Name:</label>
-                        <input type="text" id="fullName" name="name" required placeholder="Johnathan Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="emailAddress">Your Professional Email Address:</label>
-                        <input type="email" id="emailAddress" name="email" required placeholder="your.email@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="phoneNumber">Your Direct Phone Number:</label>
-                        <input type="tel" id="phoneNumber" name="phone" placeholder="(123) 456-7890">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Detailed Service Request or Inquiry:</label>
-                        <textarea id="message" name="message" rows="6" sm:rows="7" required placeholder="Please describe your security camera issues, system repair requirements, or desired maintenance schedule..."></textarea>
-                    </div>
-                    <div class="text-center mt-8 sm:mt-12">
-                        <button type="submit"
-                           class="nav-link bg-blue-600 hover:bg-blue-700 shadow-xl cursor-pointer">
-                            Submit Service Request
-                            <i data-lucide="send" class="inline-block ml-3 sm:ml-4 w-5 h-5 sm:w-6 sm:h-6"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </div>
-
-    <!-- Message Box (replaces alert for better UX) -->
-    <div id="messageBox">
-        <p id="messageText"></p>
-        <button id="closeMessageBox">OK</button>
-    </div>
-
-    <!-- Initialize Lucide Icons after the content is loaded and Lucide is available -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            lucide.createIcons();
-
-            // Custom Message Box functions
-            const messageBox = document.getElementById('messageBox');
-            const messageText = document.getElementById('messageText');
-            const closeMessageBox = document.getElementById('closeMessageBox');
-
-            function showMessage(message) {
-                messageText.textContent = message;
-                messageBox.style.display = 'block';
-            }
-
-            closeMessageBox.addEventListener('click', function() {
-                messageBox.style.display = 'none';
-            });
-
-            // Handle Formspree submission feedback
-            const form = document.getElementById('contactForm');
-            form.addEventListener('submit', async function(event) {
-                event.preventDefault(); // Prevent default form submission
-
-                const formData = new FormData(form);
-                // Add a hidden field for _subject to set the email's subject line
-                formData.append('_subject', 'Service Request Submitted - Surveillance System'); 
-
-                try {
-                    const response = await fetch(form.action, {
-                        method: form.method,
-                        body: formData,
-                        headers: {
-                            'Accept': 'application/json'
-                        }
-                    });
-
-                    if (response.ok) {
-                        showMessage('Thank you for your service request! We have received your message and will contact you promptly.');
-                        form.reset(); // Clear the form
-                    } else {
-                        const data = await response.json();
-                        if (Object.hasOwnProperty.call(data, 'errors')) {
-                            showMessage('Error: ' + data["errors"].map(error => error["message"]).join(", "));
-                        } else {
-                            showMessage('An unexpected error occurred during submission. Please try again or call us.');
-                        }
-                    }
-                } catch (error) {
-                    showMessage('Network error: Could not connect to the server. Please check your internet connection and try again.');
-                }
-            });
-        });
     </script>
+    <!-- Open Graph and Twitter Cards for Social SEO -->
+    <meta property="og:title" content="Premier Security Camera Support & Repair | USA">
+    <meta property="og:description" content="Expert solutions for security camera repair and maintenance in the USA.">
+    <meta property="og:image" content="https://yourusername.github.io/security-support-page/og-image.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/security-support-page">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Tailwind CSS and Lucide Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://yourusername.github.io/security-support-page/favicon.png">
+</head>
+<body class="bg-gray-900 text-gray-200 font-inter antialiased">
+    <header class="bg-gray-800 p-6 sm:p-8 shadow-lg">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 sm:mb-0">
+                <i data-lucide="shield-check" class="w-12 h-12 text-blue-400 mr-4"></i>
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-blue-300">Premier Security Camera Support</h1>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="dark-mode-toggle" class="nav-link bg-gray-700 hover:bg-gray-600">
+                    <i data-lucide="moon" class="w-5 h-5"></i> Toggle Dark Mode
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto mt-8 p-4 sm:p-6 rounded-lg shadow-xl bg-gray-800">
+        <section id="hero" class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-blue-400 mb-4">Unmatched Security Camera Solutions</h2>
+            <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">Expert remote support, repair, and maintenance for Hikvision, Dahua, Avigilon, and more. Ensure flawless surveillance with our specialized services.</p>
+            <a href="#contact" class="mt-6 inline-block nav-link">Get Started Now</a>
+        </section>
+        <section id="services" class="mb-12">
+            <h2 class="section-heading text-center">Our Core Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="service-card">
+                    <i data-lucide="cctv" class="w-16 h-16 text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-blue-300">Camera Repair</h3>
+                    <p class="text-gray-400 mt-2">Fix blurry images, night vision issues, and connectivity problems for IP, Dome, Bullet, and PTZ cameras.</p>
+                </div>
+                <div class="service-card">
+                    <i data-lucide="monitor" class="w-16 h-16 text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-blue-300">DVR Troubleshooting</h3>
+                    <p class="text-gray-400 mt-2">Resolve recording failures and playback issues with expert DVR diagnostics.</p>
+                </div>
+                <div class="service-card">
+                    <i data-lucide="server" class="w-16 h-16 text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-blue-300">NVR Maintenance</h3>
+                    <p class="text-gray-400 mt-2">Ensure seamless network surveillance with advanced NVR and IP system support.</p>
+                </div>
+            </div>
+        </section>
+        <section id="pricing" class="mb-12">
+            <h2 class="section-heading text-center">Service Pricing</h2>
+            <div class="info-box p-6">
+                <p class="text-lg">Standard on-site consultation: <span class="text-red-500 font-bold text-2xl">$375</span></p>
+                <p class="text-gray-400 mt-2">Includes diagnostics and most immediate repairs. Additional parts or labor quoted separately.</p>
+                <p class="text-gray-500 mt-2 text-sm">Transparent pricing ensures uninterrupted security and peace of mind.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="section-heading text-center">Request a Consultation</h2>
+            <p class="text-center text-gray-400 mb-6">Or call us at <a href="tel:+12163338245" class="text-teal-400 hover:underline">216-333-8245</a></p>
+            <form id="contactForm" class="bg-gray-700 p-6 rounded-lg shadow-md">
+                <div class="form-step" data-step="1">
+                    <div class="form-group">
+                        <label for="fullName" class="block text-sm font-medium text-gray-300">Full Name *</label>
+                        <input type="text" id="fullName" name="name" required class="w-full p-2 rounded bg-gray-600 border border-blue-500 focus:border-blue-300 focus:ring focus:ring-blue-200">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailAddress" class="block text-sm font-medium text-gray-300">Email *</label>
+                        <input type="email" id="emailAddress" name="email" required class="w-full p-2 rounded bg-gray-600 border border-blue-500 focus:border-blue-300 focus:ring focus:ring-blue-200">
+                    </div>
+                    <button type="button" class="next-step nav-link mt-4">Next</button>
+                </div>
+                <div class="form-step" data-step="2" style="display:none;">
+                    <div class="form-group">
+                        <label for="phoneNumber" class="block text-sm font-medium text-gray-300">Phone *</label>
+                        <input type="tel" id="phoneNumber" name="phone" required class="w-full p-2 rounded bg-gray-600 border border-blue-500 focus:border-blue-300 focus:ring focus:ring-blue-200" placeholder="+1 (XXX) XXX-XXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="systemType" class="block text-sm font-medium text-gray-300">System Type *</label>
+                        <select id="systemType" name="system-type" required class="w-full p-2 rounded bg-gray-600 border border-blue-500 focus:border-blue-300 focus:ring focus:ring-blue-200">
+                            <option value="">Select System</option>
+                            <option value="hikvision">Hikvision</option>
+                            <option value="dahua">Dahua</option>
+                            <option value="avigilon">Avigilon</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button type="button" class="prev-step nav-link mt-4">Previous</button>
+                    <button type="button" class="next-step nav-link mt-4">Next</button>
+                </div>
+                <div class="form-step" data-step="3" style="display:none;">
+                    <div class="form-group">
+                        <label for="message" class="block text-sm font-medium text-gray-300">Service Request *</label>
+                        <textarea id="message" name="message" required class="w-full p-2 rounded bg-gray-600 border border-blue-500 focus:border-blue-300 focus:ring focus:ring-blue-200" rows="4" placeholder="Describe your issue or needs..."></textarea>
+                    </div>
+                    <button type="button" class="prev-step nav-link mt-4">Previous</button>
+                    <button type="submit" class="nav-link mt-4">Submit Request</button>
+                </div>
+                <div id="error-message" class="text-red-500 mt-2"></div>
+                <div id="success-message" class="text-green-500 mt-2" style="display:none;">Thank you! We’ll contact you soon.</div>
+            </form>
+            <div id="progress-bar" class="w-full bg-gray-600 h-2 mt-4 rounded-full">
+                <div id="progress" class="bg-blue-500 h-2 rounded-full" style="width: 0%;"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 p-4 sm:p-6 mt-8 text-center">
+        <p>© 2025 Your Business Name. <a href="https://yourusername.github.io/get-paid-page" class="text-blue-400 hover:underline">Buy Now</a> | <a href="https://yourwixsite.com" class="text-blue-400 hover:underline">Visit Our Site</a></p>
+    </footer>
+
+    <!-- Message Box -->
+    <div id="messageBox" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+            <p id="messageText" class="text-lg"></p>
+            <button id="closeMessageBox" class="mt-4 nav-link">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+    <script src="lang.js"></script>
 </body>
 </html>
