@@ -1,12 +1,97 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <!-- Tailwind CSS CDN for basic styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 0 5px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #45a049;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        .contact-info a {
+            color: #2563eb; /* Blue for links */
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body>
-    <h1>Contact Information</h1>
-    <p>You can reach me at example@email.com</p>
-    <p><a href="index.html">Back to Home</a></p>
+<body class="p-4">
+    <div class="container">
+        <h1 class="text-4xl font-bold text-center mb-6 text-green-700">Get in Touch!</h1>
+        <p class="text-lg mb-8 text-center">
+            Have a question, feedback, or just want to say hello? Use the details below to contact me.
+        </p>
+
+        <h2 class="text-2xl font-semibold mb-4 text-center">Navigation</h2>
+        <nav class="text-center mb-8">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Our Products</a>
+            <a href="contact.html" class="nav-link">Contact Me</a>
+        </nav>
+
+        <section class="contact-info text-center mb-6">
+            <h3 class="text-xl font-semibold mb-3">Contact Details</h3>
+            <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+            <p><strong>Address:</strong> 123 Web Dev Lane, Internet City, WWW 10001</p>
+        </section>
+
+        <section class="mb-6">
+            <h3 class="text-xl font-semibold mb-3 text-center">Send a Message</h3>
+            <p class="text-center">
+                (Note: A functional contact form requires backend processing, which GitHub Pages does not support directly. This is a placeholder.)
+            </p>
+            <form class="bg-gray-50 p-6 rounded-lg shadow-inner mt-4">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="your.email@example.com">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                    <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your message..."></textarea>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
+                        Send Message (Non-functional)
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
 </body>
 </html>
