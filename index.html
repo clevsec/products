@@ -1,20 +1,69 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Awesome Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Homepage</title>
+    <!-- Tailwind CSS CDN for basic styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 0 5px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
-<body>
-    <h1>Welcome to My GitHub Page!</h1>
-    <p>This is my first simple webpage.</p>
+<body class="p-4">
+    <div class="container">
+        <h1 class="text-4xl font-bold text-center mb-6 text-green-700">Welcome to My Awesome Site!</h1>
+        <p class="text-lg mb-8 text-center">
+            This is the homepage of my new website hosted on GitHub Pages.
+            Feel free to explore the other sections.
+        </p>
 
-    <h2>Navigation:</h2>
-    <ul>
-        <li><a href="products.html">View My Projects</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-        <li><a href="https://github.com/your-username" target="_blank">Visit my GitHub Profile</a></li>
-    </ul>
+        <h2 class="text-2xl font-semibold mb-4 text-center">Navigation</h2>
+        <nav class="text-center mb-8">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Our Products</a>
+            <a href="contact.html" class="nav-link">Contact Me</a>
+        </nav>
 
-    <p>Feel free to explore!</p>
+        <section class="mb-6">
+            <h3 class="text-xl font-semibold mb-3">About This Site</h3>
+            <p>
+                This website serves as a simple demonstration of creating multiple pages using HTML and hosting them on GitHub Pages. Each page is a separate HTML file, and they are linked together using basic anchor tags.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="text-xl font-semibold mb-3">What's Next?</h3>
+            <p>
+                You can easily expand this site by adding more pages, styling them with CSS, and even adding interactive elements with JavaScript. GitHub Pages is a great way to host static websites for free!
+            </p>
+        </section>
+    </div>
 </body>
 </html>
