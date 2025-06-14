@@ -6,7 +6,7 @@
     <title>Security Camera Repair Services - Cleveland Security Cameras</title>
     <!-- Tailwind CSS CDN for basic styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons CDN for visual elements (moved to head for faster loading of icons) -->
+    <!-- Lucide Icons CDN for visual elements -->
     <script src="https://unpkg.com/lucide-icons@latest"></script>
     <style>
         body {
@@ -212,10 +212,7 @@
             </p>
 
             <div class="bg-gray-700 p-8 rounded-lg shadow-xl mb-8">
-                <!-- Formspree Integration -->
-                <!-- IMPORTANT: Replace "YOUR_FORMSPREE_ENDPOINT" with your actual Formspree form URL. -->
-                <!-- Set up this Formspree form to send submissions ONLY to contact@clevelandsecuritycameras.com in your Formspree.io account settings. -->
-                <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="text-left">
+                <form id="contactForm" action="https://formspree.io/f/mnnvvnnb" method="POST" class="text-left">
                     <div class="form-group">
                         <label for="fullName">Your Name:</label>
                         <input type="text" id="fullName" name="name" required placeholder="John Doe">
@@ -236,9 +233,7 @@
                         </button>
                     </div>
                 </form>
-                <p class="text-sm text-gray-400 mt-4">
-                    *Note: This form uses Formspree.io to send messages directly. Please configure your Formspree account for the unique URL above to send submissions only to **contact@clevelandsecuritycameras.com**.
-                </p>
+                
             </div>
         </section>
     </div>
@@ -276,6 +271,9 @@
                 event.preventDefault(); // Prevent default form submission
 
                 const formData = new FormData(form);
+                // Add a hidden field for _subject to set the email's subject line
+                formData.append('_subject', 'Submission'); 
+
                 try {
                     const response = await fetch(form.action, {
                         method: form.method,
