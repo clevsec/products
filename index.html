@@ -3,67 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Homepage</title>
+    <title>Security Camera Repair Services - Cleveland Security Cameras</title>
     <!-- Tailwind CSS CDN for basic styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
+            background-color: #1a202c; /* Dark background for security theme */
+            color: #e2e8f0; /* Light text for contrast */
             line-height: 1.6;
         }
         .container {
             max-width: 800px;
             margin: 40px auto;
-            padding: 20px;
-            background-color: #fff;
+            padding: 24px; /* Increased padding */
+            background-color: #2d3748; /* Slightly lighter dark background for content area */
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow */
         }
         .nav-link {
             display: inline-block;
-            padding: 8px 15px;
-            margin: 0 5px;
-            background-color: #4CAF50; /* Green */
+            padding: 10px 18px; /* Larger padding */
+            margin: 0 8px; /* Increased margin */
+            background-color: #4299e1; /* Blue for navigation */
             color: white;
             text-decoration: none;
             border-radius: 8px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .nav-link:hover {
-            background-color: #45a049;
+            background-color: #3182ce;
+            transform: translateY(-2px); /* Subtle hover effect */
+        }
+        .info-box {
+            background-color: #4a5568; /* Darker background for info box */
+            border-left: 5px solid #63b3ed; /* Brighter blue border */
+            padding: 20px; /* Increased padding */
+            border-radius: 8px;
+            margin-top: 25px; /* Increased margin top */
+            color: #e2e8f0; /* Light text inside info box */
+        }
+        .price-highlight {
+            font-size: 2.2rem; /* Larger font size */
+            font-weight: bold;
+            color: #fc8181; /* Soft red for emphasis */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Subtle shadow */
+        }
+        .service-card {
+            background-color: #3b465b; /* Slightly lighter dark for cards */
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+        }
+        .service-card svg {
+            color: #63b3ed; /* Icon color */
+            margin-bottom: 15px;
+            width: 48px; /* Larger icon size */
+            height: 48px;
+        }
+        .service-card h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e2e8f0;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body class="p-4">
     <div class="container">
-        <h1 class="text-4xl font-bold text-center mb-6 text-green-700">Welcome to My Awesome Site!</h1>
-        <p class="text-lg mb-8 text-center">
-            This is the homepage of my new website hosted on GitHub Pages.
-            Feel free to explore the other sections.
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-center mb-8 text-blue-400">
+            <i data-lucide="shield-check" class="inline-block mr-3 w-10 h-10"></i> Security System Repair & Service
+        </h1>
+        <p class="text-lg mb-10 text-center text-gray-300">
+            We specialize in repairing and servicing existing security camera systems to ensure your peace of mind.
+            Trust Cleveland Security Cameras for reliable and efficient solutions.
         </p>
 
-        <h2 class="text-2xl font-semibold mb-4 text-center">Navigation</h2>
-        <nav class="text-center mb-8">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="products.html" class="nav-link">Our Products</a>
-            <a href="contact.html" class="nav-link">Contact Me</a>
-        </nav>
-
-        <section class="mb-6">
-            <h3 class="text-xl font-semibold mb-3">About This Site</h3>
-            <p>
-                This website serves as a simple demonstration of creating multiple pages using HTML and hosting them on GitHub Pages. Each page is a separate HTML file, and they are linked together using basic anchor tags.
-            </p>
+        <section class="mb-8">
+            <h3 class="text-xl font-semibold mb-6 text-gray-100 text-center">What We Repair:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="service-card">
+                    <i data-lucide="video"></i>
+                    <h4>Security Cameras</h4>
+                    <p class="text-gray-300 text-sm">
+                        All types, including IP, Analog, Dome, Bullet, PTZ. Expert diagnosis and repair.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <i data-lucide="hard-drive"></i>
+                    <h4>Security DVRs</h4>
+                    <p class="text-gray-300 text-sm">
+                        Troubleshooting and repair for all Digital Video Recorder recording and playback issues.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <i data-lucide="network"></i>
+                    <h4>Security NVRs</h4>
+                    <p class="text-gray-300 text-sm">
+                        Specialized service for Network Video Recorders, ensuring seamless network performance.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h3 class="text-xl font-semibold mb-3">What's Next?</h3>
-            <p>
-                You can easily expand this site by adding more pages, styling them with CSS, and even adding interactive elements with JavaScript. GitHub Pages is a great way to host static websites for free!
+        <section class="mb-8">
+            <h3 class="text-xl font-semibold mb-4 text-gray-100">Service Call Details:</h3>
+            <div class="info-box">
+                <p>
+                    Our standard service call fee is <span class="price-highlight">$375</span>. This fee covers most common diagnostic and repair problems encountered on-site.
+                </p>
+                <p class="mt-4 text-base text-gray-300">
+                    Please note that any necessary **hardware (e.g., new cameras, cables, parts) or additional installation labor beyond the initial service call will be quoted separately**. We believe in transparent pricing and will always discuss any extra costs upfront.
+                </p>
+                <p class="mt-4 text-sm text-gray-400">
+                    Our goal is to get your system back up and running efficiently and reliably.
+                </p>
+            </div>
+        </section>
+
+        <section class="mt-10 text-center">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-100">Ready to Schedule a Service or Ask a Question?</h3>
+            <p class="text-lg mb-6 text-gray-300">
+                You can reach us directly by email or phone:
+            </p>
+            <p class="text-lg mb-6">
+                <a href="mailto:contact@clevelandsecuritycameras.com,cmdadvantage@gmail.com,vision8000@outlook.com?subject=Security%20Camera%20Service%20Inquiry"
+                   class="nav-link bg-indigo-600 hover:bg-indigo-500 shadow-lg">
+                    Contact Us
+                    <i data-lucide="mail" class="inline-block ml-2 w-5 h-5"></i>
+                </a>
+            </p>
+            <p class="text-lg mb-4 text-gray-300">
+                Or give us a call:
+            </p>
+            <p class="text-4xl font-extrabold text-teal-400">
+                <a href="tel:+12163338245" class="hover:underline">
+                    216-333-8245
+                    <i data-lucide="phone" class="inline-block ml-3 w-7 h-7"></i>
+                </a>
             </p>
         </section>
     </div>
+    <!-- Lucide Icons CDN for visual elements -->
+    <script src="https://unpkg.com/lucide-icons@latest"></script>
+    <!-- Initialize Lucide Icons directly after the CDN script -->
+    <script>
+        // No DOMContentLoaded needed here, as the script is placed at the end of the body
+        // and the Lucide library CDN script is directly before it.
+        lucide.createIcons();
+    </script>
 </body>
 </html>
